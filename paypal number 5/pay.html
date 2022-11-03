@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paypal Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/icon" img src = "goofynike.jpeg">
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+</head>
+<body>
+    <main id="cart-main">
+        <div class="site-title text-center">
+            <h1 class="font-title">Clothes Shopping Cart</h1>
+        </div>
+        <div class="container">
+            <div class="grid">
+                <div class="col-1">
+                    <div class="flex item justify-content-between">
+                        <div class="flex">
+                            <div class="img text-center">
+                                <img src="./images/dress.jpg" alt="">
+                            </div>
+                            <div class="title">
+                                <h3>Wedding Dress</h3>
+                                <span>Fashions</span>
+                                <div class="buttons">
+                                    <button type="submit"><i class="fas fa-chevron-up"></i> </button>
+                                    <input type="text" class="font-title" value="1">
+                                    <button type="submit"><i class="fas fa-chevron-down"></i> </button>
+                                </div>
+                                <a href="#">Save for later</a> |
+                                <a href="#">Delete From Cart</a>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <h4 class="text-red">$550</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="subtotal text-center">
+                        <h3>Price Details</h3>
+                        <ul>
+                            <li class="flex justify-content-between">
+                                <label for="price">Products ( 1 item ) : </label>
+                                <span>$500</span>
+                            </li>
+                            <li class="flex justify-content-between">
+                                <label for="price">Delivery Charges : </label>
+                                <span>$50</span>
+                            </li>
+                            <hr>
+                            <li class="flex justify-content-between">
+                                <label for="price">Amount Payable : </label>
+                                <span class="text-red font-title">$550</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class=" col-md-3 col-sm-6 col-xs-12">
+                    <div class="hm-footer-widget">
+                        <div class="hm-foot-title">
+                            <h4>Payment(PayPal)</h4>
+                        <?php include 'payment.php';?>
+                        <?php include 'Oncancel.php';?>   
+                        </div><!--/.hm-foot-title-->
+                        <div class="hm-foot-menu">
+                            <ul>
+                                <ul>
+                                    <strong>
+                                        Select items to be Purchased
+                                    </strong>
+                                    <input type="text" class="form-control" placeholder="">
+                                </ul><!--/ul-->
+                            </ul><!--/ul-->
+                        </div><!--/.hm-foot-menu-->
+                    </div><!--/.hm-footer-widget-->
+                </div><!--/.col-->
+                <div class=" col-md-3 col-sm-6 col-xs-12">
+                    <div class="hm-footer-widget">
+                        <div class="hm-foot-title">
+                            <h4>Payment to be done using VISA accounts (international purchase)</h4>
+                        </div><!--/.hm-foot-title-->
+                        <div class="hm-foot-menu">
+                            <ul>
+                                <strong>
+                                    Enter account number.
+                                </strong>
+                                <input type="text" class="form-control" placeholder="*** *** ***">
+                            </ul><!--/ul-->
+                        </div><!--/.hm-foot-menu-->
+                    </div><!--/.hm-footer-widget-->
+                </div><!--/.col-->
+                <div class=" col-md-3 col-sm-6  col-xs-12">
+                    <div class="hm-footer-widget">
+                        <div class="hm-foot-title">
+                            <h4>PIN</h4>
+                        </div><!--/.hm-foot-title-->
+                        <div class="hm-foot-para">
+                            <strong>
+                                Enter Pin .
+                            </strong>
+                        </div><!--/.hm-foot-para-->
+                        <div class="hm-foot-email">
+                            <div class="foot-email-box">
+                                <input type="text" class="form-control" placeholder="****">
+                            </div><!--/.foot-email-box-->
+                            <div class="foot-email-subscribe">
+                                <span><i class="fa fa-location-arrow"></i></span>
+                            </div><!--/.foot-email-icon-->
+                        </div><!--/.hm-foot-email-->
+                    </div><!--/.hm-footer-widget-->
+                </div><!--/.col-->
+            </div><!--/.row-->
+        </div><!--/.hm-footer-details-->
+    </div><!--/.container-->
+    <div>
+        <a href ="index.html" class="button">Submit</a>
+    </div>
+</section><!--/newsletter-->	
+<!--newsletter end -->
+
+<!--footer start-->
+<footer id="footer"  class="footer">
+    <div class="container">
+        <div class="hm-footer-copyright text-center">
+            <div class="footer-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>	
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><i class="fa fa-behance"></i></a>	
+            </div>
+
+                                 <p>
+                &copy;copyright. designed and developed by Esa
+            </p>
+            <!--/p-->
+        </div><!--/.text-center-->
+    </div><!--/.container-->
+
+    <div id="scroll-Top">
+        <div class="return-to-top">
+            <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+        </div>
+        
+    </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://www.paypal.com/sdk/js?client-id=ATqJoT8uledW83BN2RvdA4o9tptMnGw4EUVlV1na6YHhKgqXEHcJXE8t0EZLGsDr4mybfMJ5nXxL10vQ&disable-funding=credit,card"></script>
+    <script src="index.html"></script>
+    <!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
+        
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+</body>
+</html>
